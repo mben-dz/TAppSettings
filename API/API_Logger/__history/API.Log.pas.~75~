@@ -1,0 +1,91 @@
+unit API.Log;
+
+interface
+uses
+  Vcl.Controls
+  ;
+
+type
+  TControl = class(Vcl.Controls.TControl) // to Access private Methods (eSPECIALLY text or caption properties)!!!
+  end;
+
+  I_Logger = interface ['{57803DB1-A6DD-4ADF-BA89-D1C17CF6E18D}']
+
+    function Log(const aLog: string; aUseSleep_After: Boolean = True; aSleep: Byte = 100): I_Logger;
+    function LogProgress(const ProgressMsg: string;
+                              var aProgressCtrl: TControl;
+                              var aProgressBar: TControl;
+                                  aProgValue, aMaxTotal: Cardinal): I_Logger;
+  end;
+
+ function Logger: I_Logger;
+
+implementation
+
+uses
+  System.SysUtils
+, Vcl.ComCtrls
+  ;
+
+type
+  TLogger = class(TInterfacedObject, I_Log)
+  private
+    fCtrlDisplay: TControl;
+  protected
+    function Log(const aLog: string; aUseSleep_After: Boolean = True; aSleep: Byte = 100): I_Log;
+    function LogProgress(const ProgressMsg: string;
+                              var aProgressCtrl: TControl;
+                              var aProgressBar: TControl;
+                                  aProgValue, aMaxTotal: Cardinal): I_Log;
+  public
+    constructor Create(const aCtrlDisplay: TControl); reintroduce; overload;
+    destructor Destroy; override;
+  end;
+{ TLog }
+
+{$REGION '  [constructor||destructor] .. '}
+constructor TLogger.Create(const aCtrlDisplay: TControl);
+begin inherited Create;
+
+  fCtrlDisplay := aCtrlDisplay;
+end;
+
+destructor TLogger.Destroy;
+begin
+  inherited Destroy;
+end;
+{$ENDREGION}
+
+function TLogger.Log(const aLog: string; aUseSleep_After: Boolean; aSleep: Byte): I_Log;
+begin
+  Result := Self;
+
+  if Assigned(fCtrlDisplay) then
+    TControl(fCtrlDisplay).Text := aLog;
+
+  if aUseSleep_After then
+    Sleep(aSleep);
+
+end;
+
+function TLogger.LogProgress(const ProgressMsg: string;
+                              var aProgressCtrl: TControl;
+                              var aProgressBar: TControl;
+                                  aProgValue, aMaxTotal: Cardinal): I_Log;
+begin
+  Result := Self;
+
+  aProgressCtrl.Visible := True;
+  TControl(aProgressCtrl).Text := ProgressMsg;
+
+  aProgressBar.Visible := True;
+  TProgressBar(aProgressBar).Max      := aMaxTotal;
+  TProgressBar(aProgressBar).Position := aProgValue;
+end;
+
+function Logger: I_Log; begin
+  Result := TLogger.Create(aCtrlDisplay);
+end;
+
+
+end.

@@ -1,0 +1,97 @@
+unit API.APP.Helper;
+
+interface
+
+uses
+  System.SysUtils // Use Of [Exception] ..
+, VCL.Forms       // Use Of [TApplication] ..
+//
+, Model.DB.Interfaces
+, API.EmbedFonts.Interfaces
+  ;
+
+type
+  TApp_CustomException = class
+  private
+    procedure Custom_Exception(aSender: TObject; aEx: Exception);
+  public
+    constructor Create;
+    destructor Destroy; override;
+  end;
+
+  TApplicationHelper = class helper for TApplication
+  private
+    [weak]
+    function Get_DB: I_DB;
+    function Get_EmbedFonts: I_EmbedFonts;
+  public
+    property DB: I_DB read Get_DB;
+    property EmbedFonts: I_EmbedFonts read Get_EmbedFonts;
+  end;
+
+var
+  App: TApplication absolute Application;
+
+implementation
+
+uses
+  System.UITypes // Use Of [TMsgDlgType||TMsgDlgBtn] ..
+, VCL.Dialogs
+//
+, Model.DB
+, API.EmbedFonts
+;
+
+var
+  Global_Custom_Exception: TApp_CustomException = nil;
+//
+  Global_ModelDB   : I_DB;
+  Global_EmbedFonts: I_EmbedFonts = nil;
+
+{ TAppBehaviors }
+
+{$REGION '  [APP Assign Custom Exception] .. '}
+procedure TApp_CustomException.Custom_Exception(aSender: TObject; aEx: Exception);
+begin
+  MessageDlg(aEx.Message, System.UITypes.TMsgDlgType.mtError, [System.UITypes.TMsgDlgBtn.mbOK], 0);
+end;
+
+constructor TApp_CustomException.Create;
+begin
+  ReportMemoryLeaksOnShutdown := True;
+  App.OnException             := Custom_Exception;
+end;
+
+destructor TApp_CustomException.Destroy;
+begin
+  inherited;
+end;
+{$ENDREGION}
+
+{ TApplicationHelper }
+
+{$REGION '  [ APP Helpers ] .. '}
+function TApplicationHelper.Get_DB: I_DB;
+begin
+  if not Assigned(Global_ModelDB) then
+    Global_ModelDB := TModel_DB.New; //(Self);
+
+  Result := Global_ModelDB;
+end;
+
+function TApplicationHelper.Get_EmbedFonts: I_EmbedFonts;
+begin
+  if not Assigned(Global_EmbedFonts) then
+    Global_EmbedFonts := TEmbedFonts.New;
+
+  Result := Global_EmbedFonts;
+end;
+{$ENDREGION}
+
+initialization
+  Global_Custom_Exception := TApp_CustomException.Create;
+
+finalization
+  Global_Custom_Exception.Free;
+
+end.

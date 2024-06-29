@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.337,=D:\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.882,=D:\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.977,=D:\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.802,=D:\Projects\ServerContainerUnit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.790,=D:\Projects\ServerMethodsUnit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.618,D:\Projects\GPL\ExtractFontName\Scripter\EmbedFontsScript.dproj=D:\Projects\Project1.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.128,=D:\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.731,=D:\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.391,=D:\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.147,=D:\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.642,=D:\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.998,=D:\Projects\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

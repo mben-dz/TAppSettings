@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.682,=D:\Projects\GPL\ExtractFontName\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.543,D:\Projects\GPL\ExtractFontName\Unit1.pas=D:\Projects\GPL\ExtractFontName\API\App.EmbedFonts.Interfaces.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.354,D:\Projects\GPL\ExtractFontName\Unit1.pas=D:\Projects\GPL\ExtractFontName\API\App\EmbedFonts\App.EmbedFonts.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.745,D:\Projects\GPL\ExtractFontName\Unit1.pas=D:\Projects\GPL\ExtractFontName\API\App_Setting\App.Settings.Interfaces.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.764,D:\Projects\GPL\ExtractFontName\Unit1.pas=D:\Projects\GPL\ExtractFontName\API\App_Setting\Logic\App.Settings.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.786,D:\Projects\GPL\ExtractFontName\DEPLOY\APP\Fonts\1.ttf=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.822,=D:\Projects\GPL\ExtractFontName\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.154,=D:\Projects\GPL\ExtractFontName\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.367,=D:\Projects\GPL\ExtractFontName\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.390,=D:\Projects\GPL\ExtractFontName\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.247,D:\Projects\GPL\TAppSettings\AppSettings.dproj=D:\Projects\GPL\ExtractFontName\FontName_Extractor.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.790,=D:\Projects\GPL\ExtractFontName\Fonts.zip</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.246,=D:\Projects\GPL\ExtractFontName\API\App_Helper\App.Helper.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.063,D:\Projects\GPL\ExtractFontName\API\API.Log.Interfaces.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.734,=D:\Projects\GPL\ExtractFontName\API\API.Log.Interfaces.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.466,D:\Projects\GPL\ExtractFontName\FontName_Extractor.dproj=D:\Projects\Project1.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.864,D:\Projects\GPL\ExtractFontName\Main.View.pas=D:\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.604,D:\Projects\GPL\ExtractFontName\API\App.EmbedFonts.Interfaces.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.891,=D:\Projects\GPL\ExtractFontName\API\App_Setting\Splash\App.Splash.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.864,D:\Projects\GPL\ExtractFontName\Main.View.dfm=D:\Projects\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.854,D:\Projects\GPL\ExtractFontName\Fonts.zip=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.375,=D:\Projects\GPL\ExtractFontName\DEPLOY\APP\Fonts\1.ttf</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.128,=D:\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.664,=D:\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.731,=D:\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.882,=D:\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.147,=D:\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.290,=D:\Projects\GPL\ExtractFontName\API\API_Log\API.Log.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.682,D:\Projects\GPL\ExtractFontName\API\API_Log\API.Log.pas=D:\Projects\GPL\ExtractFontName\API\API_Log\API.Logger.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.113,D:\Projects\GPL\ExtractFontName\API\Controls.Hack.pas=D:\Projects\GPL\ExtractFontName\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.802,=D:\Projects\ServerContainerUnit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.337,=D:\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.998,=D:\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.078,=D:\Projects\GPL\ExtractFontName\DEPLOY\APP\Fonts\0.otf</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.308,D:\Projects\GPL\ExtractFontName\DEPLOY\APP\Fonts\0.otf=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.028,D:\Projects\GPL\ExtractFontName\DEPLOY\APP\Fonts\0.otf=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.895,D:\Projects\GPL\ExtractFontName\DEPLOY\APP\Fonts\0.otf=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.364,=D:\Projects\GPL\ExtractFontName\DEPLOY\APP\Fonts\0.otf</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.977,=D:\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.642,=D:\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.391,=D:\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.790,=D:\Projects\ServerMethodsUnit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.263,=D:\Projects\GPL\ExtractFontName\DEPLOY\APP\Fonts\0.otf</Transaction>
+  </Transactions>
+</BorlandProject>

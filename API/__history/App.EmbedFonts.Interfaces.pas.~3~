@@ -1,0 +1,15 @@
+unit App.EmbedFonts.Interfaces;
+
+interface
+
+type
+  I_EmbedFonts = interface ['{0D743FE1-A1A8-4C72-BB55-58DDA2EF4477}']
+
+    function Add_FontsNames_FromResource(const aResourceNames: array of string): I_EmbedFonts;
+    function Load_Fonts: I_EmbedFonts;
+    function Remove_Fonts: I_EmbedFonts;
+  end;
+
+implementation
+
+end.
